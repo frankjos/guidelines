@@ -1,2 +1,10 @@
-<h1>This is the Vintage King Guidelines doc.</h1>
-<%= link_to "View Styles", styles_path %>
+<% if user_signed_in? %>
+	<h1>Where do you want to go?</h1>
+	<%= link_to "View Styles", styles_path %>
+<% else %>
+<h1>Vintage King Guidelines</h1>
+
+<p>
+  <%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
+</p>
+<% end %>

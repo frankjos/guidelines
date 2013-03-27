@@ -1,5 +1,7 @@
 Guidelines::Application.routes.draw do
   
+  devise_for :users
+
   root :to => 'pages#home'
   get 'styles' => 'pages#styles'
   # The priority is based upon order of creation:
