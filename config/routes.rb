@@ -1,4 +1,7 @@
 Guidelines::Application.routes.draw do
+  
+  root :to => 'pages#home'
+  get 'styles' => 'pages#styles'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
