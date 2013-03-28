@@ -1,5 +1,8 @@
 Guidelines::Application.routes.draw do
   
+  resources :rules
+
+
   devise_for :users
 
   root :to => 'pages#home'

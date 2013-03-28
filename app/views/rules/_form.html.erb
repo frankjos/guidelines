@@ -1,0 +1,10 @@
+<%= simple_form_for(@rule, html: { class: "form-horizontal"}) do |f| %>
+  <%= f.error_notification %>
+
+    <%= f.input :title %>
+    <%= f.input :description %>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-primary" %>
+  </div>
+<% end %>

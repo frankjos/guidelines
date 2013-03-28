@@ -1,0 +1,22 @@
+<div class="row">
+	<div class="span8 offset2">
+		<div class="well">
+			<p>
+			  <h4><%= @rule.title %></h4>
+			</p>
+
+			<p>
+			  <%= @rule.description %>
+			</p>
+			<p>
+			  <%= @rule.user.name %>
+			</p>
+			<% if current_user == @rule.user %>
+				<%= link_to 'Edit', edit_rule_path(@rule) %> |
+			<% end %>
+			<%= link_to 'Back', rules_path %>
+		</div>
+	</div>
+</div>
+
+
