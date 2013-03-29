@@ -5,9 +5,24 @@ body { padding-top: 60px; }
 @import 'bootstrap-responsive';
 
 .footer { 
+	clear: both;
 	margin-top: 50px; 
 	color: $grayLight;
 	a {
 		color: $gray;
 	}
+}
+
+/*Require for jQuery Masonry*/
+.rules {
+}
+.rule {
+	margin: 5px;
+	float: left;
+	padding: 5px 10px;
+	width: 360px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px #666;
 }

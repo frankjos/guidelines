@@ -1,9 +1,9 @@
-<tr>
-	<td><%= rule.title %></td>
-	<td><%= rule.description %></td>
-	<td><%= link_to 'Show', rule %></td>
+<div class="rule">
+	<h4><%= rule.title %></h4>
+	<p><%= rule.description %></p>
+	<!-- <%= link_to 'Show', rule %> -->
 	<% if current_user == rule.user %>
-		<td><%= link_to 'Edit', edit_rule_path(rule) %></td>
-		<td><%= link_to 'Destroy', rule, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<p><%= link_to 'Edit', edit_rule_path(rule) %> |
+	<%= link_to 'Delete', rule, method: :delete, data: { confirm: 'Are you sure?' } %></p>
 	<% end %>
-</tr>
+</div>

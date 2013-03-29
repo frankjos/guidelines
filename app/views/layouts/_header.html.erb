@@ -17,10 +17,12 @@
       <div class="nav-collapse collapse">
       	<ul class="nav">
 					<li><%= link_to "Styles", styles_path %></li>
+          <li><%= link_to "Formatting Rules", rules_path %></li>
 				</ul>
       </div>
       	<ul class="nav pull-right">
           <% if user_signed_in? %>
+            <li><%= link_to '+ Add Rule', new_rule_path %></li>
             <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
             <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
           <% else %>
