@@ -33,6 +33,9 @@ GEM
     bootstrap-sass (2.2.2.0)
       sass (~> 3.2)
     builder (3.0.4)
+    ckeditor (4.0.2)
+      mime-types
+      orm_adapter
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -120,6 +123,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (~> 2.2.2.0)
+  ckeditor
   coffee-rails (~> 3.2.1)
   devise
   jquery-rails

@@ -1,6 +1,6 @@
 <div class="rule">
 	<h4><%= rule.title %></h4>
-	<p><%= rule.description %></p>
+	<p><%= raw(rule.description) %></p>
 	<!-- <%= link_to 'Show', rule %> -->
 	<% if current_user == rule.user %>
 	<p><%= link_to 'Edit', edit_rule_path(rule) %> |
