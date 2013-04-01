@@ -11,6 +11,12 @@
 			<p>
 			  <%= @rule.user.name %>
 			</p>
+			<p>
+				<% @rule.tags.any? %>
+				  <% @rule.tags.each do |tag| %>
+				  <%= link_to tag.name, tagged_url(:tag => tag.name) %>
+				<% end %>
+			</p>
 			<% if current_user == @rule.user %>
 				<%= link_to 'Edit', edit_rule_path(@rule) %> |
 			<% end %>

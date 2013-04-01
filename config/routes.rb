@@ -2,11 +2,13 @@ Guidelines::Application.routes.draw do
   
   resources :rules
 
-
   devise_for :users
 
   root :to => 'pages#home'
+
   get 'styles' => 'pages#styles'
+
+  match 'tagged' => 'rules#tagged', :as => 'tagged'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

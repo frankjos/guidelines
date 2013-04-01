@@ -22,6 +22,14 @@ class RulesController < ApplicationController
     end
   end
 
+  def tagged
+    if params[:tag].present? 
+      @rules = Rule.tagged_with(params[:tag])
+    else 
+      @rules = Rule.ruleall
+    end  
+  end
+
   # GET /rules/new
   # GET /rules/new.json
   def new
