@@ -8,4 +8,8 @@ class Rule < ActiveRecord::Base
   validates :user_id, presence: true
 
   acts_as_taggable_on :tags
+
+  searchable do
+  	text :title, :description, :tags
+  end
 end

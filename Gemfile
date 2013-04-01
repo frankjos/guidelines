@@ -4,8 +4,10 @@ gem 'rails', '3.2.12'
 gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
-gem "ckeditor"
+gem 'ckeditor'
 gem 'acts-as-taggable-on', '~> 2.3.1'
+gem 'sunspot_rails'
+gem 'sunspot_solr'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

@@ -3,7 +3,10 @@ class RulesController < ApplicationController
   # GET /rules
   # GET /rules.json
   def index
-    @rules = Rule.all
+    @search = Rule.search do
+      fulltext params[:search]
+    end
+    @rules = @search.results
 
     respond_to do |format|
       format.html # index.html.erb
