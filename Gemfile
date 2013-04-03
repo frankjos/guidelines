@@ -8,6 +8,7 @@ gem 'ckeditor'
 gem 'acts-as-taggable-on', '~> 2.3.1'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
+gem 'thin'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
