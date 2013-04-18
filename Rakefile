@@ -4,4 +4,6 @@
 
 require File.expand_path('../config/application', __FILE__)
 
+require 'sunspot/rails/tasks'
+
 Guidelines::Application.load_tasks
